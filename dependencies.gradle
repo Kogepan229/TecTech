@@ -5,15 +5,15 @@ dependencies {
     api(project.files("lib/gregtech-5.09.46.21-2-6-1.3+cea221fe33-dirty-dev.jar"))
 //    api('com.github.GTNewHorizons:GT5-Unofficial:5.09.45.166:dev')
     api('com.github.GTNewHorizons:Yamcl:0.6.0:dev')
-    implementation('com.github.GTNewHorizons:GTNEIOrePlugin:1.2.0:dev')
+    implementation('com.github.GTNewHorizons:GTNEIOrePlugin:1.2.0:dev', {transitive=false})
 
     compileOnly("TGregworks:TGregworks:1.7.10-GTNH-1.0.26:deobf") {transitive=false}
-    compileOnly('com.github.GTNewHorizons:TinkersConstruct:1.11.15-GTNH:dev') {transitive=false}
+//    compileOnly('com.github.GTNewHorizons:TinkersConstruct:1.11.15-GTNH:dev') {transitive=false}
     compileOnly('com.github.GTNewHorizons:OpenComputers:1.10.11-GTNH:dev') {transitive=false}
     compileOnly('com.github.GTNewHorizons:GTplusplus:1.11.62:dev') {transitive=false}
     compileOnly('com.github.GTNewHorizons:Avaritia:1.49:dev') {transitive=false}
 
-    compileOnly('thaumcraft:Thaumcraft:1.7.10-4.2.3.5:dev') {transitive=false}
+//    compileOnly('thaumcraft:Thaumcraft:1.7.10-4.2.3.5:dev') {transitive=false}
     compileOnly("curse.maven:extra-utilities-225561:2264384") {transitive=false}
 
     // for testing EOH recipes
@@ -26,6 +26,54 @@ dependencies {
     //runtimeOnlyNonPublishable("curse.maven:extra-utilities-225561:2264384") {transitive=false}
     //runtimeOnlyNonPublishable('com.github.GTNewHorizons:Avaritia:1.49:dev') {transitive=false}
 
-    // deps
+    // gt deps
+    api("com.github.GTNewHorizons:StructureLib:1.3.1:dev")
+    api("net.industrial-craft:industrialcraft-2:2.2.828-experimental:dev")
+    api("com.github.GTNewHorizons:NotEnoughItems:2.6.0-GTNH:dev")
+    api("com.github.GTNewHorizons:GTNHLib:0.2.11:dev")
     api("com.github.GTNewHorizons:ModularUI:1.2.0:dev")
+    api("com.github.GTNewHorizons:waila:1.8.0:dev")
+    api("com.github.GTNewHorizons:Applied-Energistics-2-Unofficial:rv3-beta-400-GTNH:dev")
+    api("com.github.GTNewHorizons:AE2FluidCraft-Rework:1.3.0-gtnh:dev")
+
+    implementation("com.github.GTNewHorizons:Avaritia:1.49:dev")
+
+    compileOnlyApi('com.github.GTNewHorizons:Angelica:1.0.0-alpha50:api') { transitive = false }
+    compileOnlyApi("com.github.GTNewHorizons:AppleCore:3.3.0:dev") { transitive = false }
+    compileOnlyApi("com.github.GTNewHorizons:BuildCraft:7.1.39:dev") { transitive = false }
+    compileOnlyApi("com.github.GTNewHorizons:EnderIO:2.8.0:dev") { transitive = false }
+    compileOnlyApi("com.github.GTNewHorizons:ProjectRed:4.9.5-GTNH:dev") { transitive = false }
+    compileOnlyApi("com.github.GTNewHorizons:ForestryMC:4.9.0:dev") { transitive = false }
+    compileOnlyApi("com.github.GTNewHorizons:Railcraft:9.15.8:dev") { transitive = false }
+
+    compileOnly("com.github.GTNewHorizons:EnderCore:0.4.6:dev") { transitive = false }
+    compileOnly("com.github.GTNewHorizons:Galacticraft:3.1.5-GTNH:dev") { transitive = false }
+    compileOnly("com.github.GTNewHorizons:TinkersConstruct:1.12.1-GTNH:dev") { transitive = false }
+    compileOnly("com.github.GTNewHorizons:Chisel:2.15.0-GTNH:dev") { transitive = false }
+    compileOnly("com.github.GTNewHorizons:Translocators:1.2.1:dev") { transitive = false }
+    compileOnly("curse.maven:cofh-core-69162:2388751") { transitive = false }
+    compileOnly("com.github.GTNewHorizons:Nuclear-Control:2.6.2:dev") { transitive = false }
+    compileOnly("thaumcraft:Thaumcraft:1.7.10-4.2.3.5:dev") { transitive = false }
+    compileOnly("com.github.GTNewHorizons:Hodgepodge:2.5.5:dev") { transitive = false }
+    compileOnly('com.github.GTNewHorizons:Botania:1.11.1-GTNH:dev') { transitive = false }
+    compileOnly('com.github.GTNewHorizons:HoloInventory:2.4.10-GTNH:dev') { transitive = false }
+    compileOnly('curse.maven:minefactory-reloaded-66672:2366150') { transitive = false }
+
+    compileOnly("com.google.auto.value:auto-value-annotations:1.10.1") { transitive = false }
+    annotationProcessor("com.google.auto.value:auto-value:1.10.1")
+
+    // For testing iApiary
+    //runtimeOnlyNonPublishable("com.github.GTNewHorizons:ForestryMC:4.9.0:dev")
+
+//    testImplementation(platform('org.junit:junit-bom:5.9.2'))
+//    testImplementation('org.junit.jupiter:junit-jupiter')
+//    testImplementation("org.mockito:mockito-core:3.+")
+//
+//    functionalTestImplementation(platform('org.junit:junit-bom:5.9.2'))
+//    functionalTestImplementation('org.junit.jupiter:junit-jupiter')
+//    functionalTestImplementation('org.junit.platform:junit-platform-engine')
+//    functionalTestImplementation('org.junit.platform:junit-platform-launcher')
+//    functionalTestImplementation('org.junit.platform:junit-platform-reporting')
+
+    runtimeOnlyNonPublishable("com.github.GTNewHorizons:DuraDisplay:1.2.3:dev")
 }
