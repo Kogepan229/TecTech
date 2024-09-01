@@ -82,8 +82,7 @@ public class GT_MetaTileEntity_EM_dataBank extends GT_MetaTileEntity_MultiblockB
                     buildHatchAdder(GT_MetaTileEntity_EM_dataBank.class)
                             .atLeast(DataBankHatches.OutboundConnector, DataBankHatches.InboundConnector)
                             .casingIndex(textureOffset + 1).dot(2).buildAndChain(
-                                    DataBankHatches.DataStick.newAny(textureOffset + 1, 2),
-                                    ofBlock(sBlockCasingsTT, 1)))
+                                    DataBankHatches.DataStick.newAnyOrCasing(textureOffset + 1, 2, sBlockCasingsTT, 1)))
             .build();
     // endregion
 

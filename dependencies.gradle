@@ -2,7 +2,8 @@
 
 dependencies {
     shadowImplementation('com.github.GTNewHorizons:AVRcore:1.0.1')
-    api('com.github.GTNewHorizons:GT5-Unofficial:5.09.45.166:dev')
+    api(project.files("lib/gregtech-5.09.46.21-2-6-1.3+cea221fe33-dirty-dev.jar"))
+//    api('com.github.GTNewHorizons:GT5-Unofficial:5.09.45.166:dev')
     api('com.github.GTNewHorizons:Yamcl:0.6.0:dev')
     implementation('com.github.GTNewHorizons:GTNEIOrePlugin:1.2.0:dev')
 
@@ -24,4 +25,7 @@ dependencies {
     //}
     //runtimeOnlyNonPublishable("curse.maven:extra-utilities-225561:2264384") {transitive=false}
     //runtimeOnlyNonPublishable('com.github.GTNewHorizons:Avaritia:1.49:dev') {transitive=false}
+
+    // deps
+    api("com.github.GTNewHorizons:ModularUI:1.2.0:dev")
 }
