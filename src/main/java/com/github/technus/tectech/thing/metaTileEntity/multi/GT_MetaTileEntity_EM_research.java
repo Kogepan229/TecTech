@@ -582,6 +582,18 @@ public class GT_MetaTileEntity_EM_research extends GT_MetaTileEntity_MultiblockB
     }
 
     @Override
+    public boolean allowPullStack(IGregTechTileEntity aBaseMetaTileEntity, int aIndex, ForgeDirection side,
+            ItemStack aStack) {
+        return aIndex == 1;
+    }
+
+    @Override
+    public boolean allowPutStack(IGregTechTileEntity aBaseMetaTileEntity, int aIndex, ForgeDirection side,
+            ItemStack aStack) {
+        return aIndex == 1;
+    }
+
+    @Override
     public void onFirstTick_EM(IGregTechTileEntity aBaseMetaTileEntity) {
         if (aBaseMetaTileEntity.isServerSide()) {
             if (computationRemaining > 0) {
